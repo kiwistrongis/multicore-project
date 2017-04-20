@@ -1,0 +1,6 @@
+Timing Stock Exchange (Rust)
+$ time target/release/stock-exchange
+
+real	0m0.119s
+user	0m0.050s
+sys	0m0.310s

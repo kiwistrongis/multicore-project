@@ -1,0 +1,6 @@
+Timing Stock Exchange (C)
+$ time bin/stock-exchange-opt
+
+real	0m0.066s
+user	0m0.020s
+sys	0m0.173s

@@ -1,0 +1,6 @@
+Timing Ticket Simulator (C)
+$ time bin/ticket-simulator-opt 1000 10000 0
+
+real	0m0.016s
+user	0m0.010s
+sys	0m0.017s

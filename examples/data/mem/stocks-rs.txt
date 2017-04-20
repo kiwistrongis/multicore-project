@@ -1,0 +1,32 @@
+Valgrinding Stock Exchange (Rust)
+$ valgrind target/release/stock-exchange
+==5956== Memcheck, a memory error detector
+==5956== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==5956== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info
+==5956== Command: target/release/stock-exchange
+==5956== 
+==5956== 
+==5956== Process terminating with default action of signal 2 (SIGINT)
+==5956==    at 0x524B57D: pthread_join (in /usr/lib/libpthread-2.25.so)
+==5956==    by 0x10ECFF: _$LT$std..thread..JoinHandle$LT$T$GT$$GT$::join::hbbb03153a0c23c21 (in /mnt/data/p/school/multicore/project/examples/target/release/stock-exchange)
+==5956==    by 0x110400: stock_exchange::main::h2b39ed0ec0dec7ed (in /mnt/data/p/school/multicore/project/examples/target/release/stock-exchange)
+==5956==    by 0x122DCA: __rust_maybe_catch_panic (lib.rs:98)
+==5956==    by 0x11B756: try<(),fn()> (panicking.rs:429)
+==5956==    by 0x11B756: catch_unwind<fn(),()> (panic.rs:361)
+==5956==    by 0x11B756: std::rt::lang_start::haad2d3aa43066bbc (rt.rs:57)
+==5956==    by 0x5698510: (below main) (in /usr/lib/libc-2.25.so)
+==5956== 
+==5956== HEAP SUMMARY:
+==5956==     in use at exit: 32,064 bytes in 202 blocks
+==5956==   total heap usage: 311 allocs, 109 frees, 37,616 bytes allocated
+==5956== 
+==5956== LEAK SUMMARY:
+==5956==    definitely lost: 0 bytes in 0 blocks
+==5956==    indirectly lost: 0 bytes in 0 blocks
+==5956==      possibly lost: 28,800 bytes in 100 blocks
+==5956==    still reachable: 3,264 bytes in 102 blocks
+==5956==         suppressed: 0 bytes in 0 blocks
+==5956== Rerun with --leak-check=full to see details of leaked memory
+==5956== 
+==5956== For counts of detected and suppressed errors, rerun with: -v
+==5956== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

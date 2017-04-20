@@ -1,0 +1,10 @@
+---
+mainfont: Titillium Web
+#mainfont: Glegoo
+#mainfont: Sansation
+sansfont: Glegoo Bold
+monofont: Inconsolata-g
+fontsize: 16pt
+geometry: margin=2.5cm
+linkcolor: blue
+---

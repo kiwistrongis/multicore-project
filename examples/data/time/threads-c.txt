@@ -1,0 +1,6 @@
+Timing Threads (C)
+$ time bin/thread-opt
+
+real	0m0.067s
+user	0m0.013s
+sys	0m0.057s

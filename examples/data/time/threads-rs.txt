@@ -1,0 +1,6 @@
+Timing Threads (Rust)
+$ time target/release/thread
+
+real	0m0.104s
+user	0m0.063s
+sys	0m0.133s
